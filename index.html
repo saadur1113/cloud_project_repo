@@ -41,7 +41,7 @@ background-color: #f4f4f4;
 <script>
 async function fetchStudentData() {
 try {
-const response = await fetch('https://your-api-endpoint');
+const response = await fetch('https://cloud-function-113.azurewebsites.net/api/cloud_trigger?code=2TIjvWPAp4n9B_ObkCzDnUpUHS0F4MU58NQhHPWVHiSYAzFurZ5MVQ%3D%3D');
 const data = await response.json();
 const tableBody = document.querySelector('#studentTable tbody');
 tableBody.innerHTML = '';
